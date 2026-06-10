@@ -39,3 +39,15 @@ Then add **Headset Control** from the system tray widget list.
 ## Widget ID
 
 `us.willkill.headsetcontrol`
+
+## Remotes
+
+Mirrored to two remotes. To replicate the setup:
+
+```bash
+git remote add forgejo ssh://git@git.willkill.us:9028/wintermute/headsetcontrol-plasmoid.git
+git remote set-url --add --push origin git@github.com:villa-straylight/headsetcontrol-plasmoid.git
+git remote set-url --add --push origin ssh://git@git.willkill.us:9028/wintermute/headsetcontrol-plasmoid.git
+```
+
+`git push` will then push to both GitHub and Forgejo simultaneously.
