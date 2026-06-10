@@ -1,0 +1,17 @@
+{
+    "KPlugin": {
+        "Authors": [{ "Email": "wintermute@willkill.us", "Name": "wintermute" }],
+        "Category": "System Information",
+        "Description": "Headset battery, sidetone, chatmix and EQ via HeadsetControl",
+        "Icon": "audio-headset",
+        "Id": "us.willkill.headsetcontrol",
+        "Name": "Headset Control",
+        "Version": "1.0.0"
+    },
+    "KPackageStructure": "Plasma/Applet",
+    "X-Plasma-API": "declarativeappletscript",
+    "X-Plasma-API-Minimum-Version": "6.0",
+    "X-Plasma-MainScript": "ui/main.qml",
+    "X-Plasma-NotificationArea": "true",
+    "X-Plasma-NotificationAreaCategory": "Hardware"
+}
