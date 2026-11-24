@@ -4,3 +4,11 @@ repos:
     hooks:
       - id: gitleaks-system  # uses the installed gitleaks (Fedora package)
         pass_filenames: false  # upstream gitleaks-system omits this; filenames make gitleaks exit with usage
+  - repo: local
+    hooks:
+      - id: markdownlint
+        name: markdownlint
+        entry: scripts/lint-md.sh  # pinned markdownlint-cli2 in Docker, same in every repo
+        language: system
+        types: [markdown]
+        pass_filenames: false
